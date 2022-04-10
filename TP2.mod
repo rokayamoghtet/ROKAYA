@@ -10,7 +10,7 @@ range j =1..NbJ;
 int y[j]= ...;
 int H[i]= ...;
 int D[i][j]= ...;
-dvar boolean X[i][j];
+dvar int+ X[i][j];
 
 minimize sum(i in 1..NbI ,j in 1..NbJ)(H[i]*D[i][j]*X[i][j]);
 subject to {
