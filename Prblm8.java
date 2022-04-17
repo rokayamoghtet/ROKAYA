@@ -1,3 +1,9 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 import ilog.concert.*;
 import ilog.cplex.*;
 public class exoTP {
@@ -13,7 +19,8 @@ try {
   for(int j=0;j<15;j++){
      var_decis[i][j]= simplexe.numVar(1, Double.MAX_VALUE);
   }
-}
+ }
+
 // declaration de la fonction objectif
  IloLinearNumExpr objectif = simplexe.linearNumExpr();
 // Définition des coefficients de la fonction objectif
